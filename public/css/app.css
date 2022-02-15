@@ -11009,6 +11009,11 @@ div.container-postcards td {
   padding: 10px;
 }
 
+div.container-postcards th img,
+div.container-postcards td img {
+  max-width: 70%;
+}
+
 div.container-postcards td:nth-child(4) {
   text-align: center;
 }

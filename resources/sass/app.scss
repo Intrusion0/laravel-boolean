@@ -52,6 +52,10 @@ div.container-postcards {
 
     th, td {
         padding: 10px;
+
+        img {
+            max-width: 70%;
+        }
     }
 
     td:nth-child(4) {
