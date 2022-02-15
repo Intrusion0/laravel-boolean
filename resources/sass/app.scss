@@ -59,6 +59,54 @@ div.container-postcards {
     }
 }
 
+// Page Home
+h2.container-create {
+    text-align: center;
+    margin: 10px 0;
+
+    a {
+        color: aqua;
+
+        &:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+    }
+}
+
+// Page Create-postcard
+div.container-page-create-postcard {
+    width: 100%;
+
+    h2 {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+
+        label {
+            font-size: 20px;
+            color: gold;
+        }
+
+        input {
+            width: 35%;
+            margin: 0 auto 10px;
+
+            &.btn.btn-primary {
+                max-width: 100px;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
 // Header - Footer
 header, footer {
     text-align: center;
