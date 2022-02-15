@@ -1,5 +1,6 @@
 <template>
     <div class="container-postcards">
+        <h2>POSTCARDS</h2>
         <table border="1">
             <tr>
                 <th>Sender</th>

@@ -1938,6 +1938,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -37544,6 +37545,8 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container-postcards" }, [
+    _c("h2", [_vm._v("POSTCARDS")]),
+    _vm._v(" "),
     _c(
       "table",
       { attrs: { border: "1" } },

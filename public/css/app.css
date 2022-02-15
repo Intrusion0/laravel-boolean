@@ -10977,6 +10977,13 @@ body {
 
 div.container-postcards {
   width: 100%;
+  padding: 35px 0;
+}
+
+div.container-postcards h2 {
+  text-align: center;
+  font-weight: 700;
+  margin: 0 0 20px;
 }
 
 div.container-postcards table {
@@ -11038,6 +11045,42 @@ h2.container-create a {
 h2.container-create a:hover {
   color: #fff;
   text-decoration: underline;
+}
+
+h3 {
+  text-align: center;
+  color: lime;
+  margin: 10px 0 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form label {
+  margin-top: 10px;
+}
+
+form input {
+  width: 20%;
+}
+
+form input.btn.btn-secondary {
+  max-width: 100px;
+  margin-top: 10px;
+}
+
+div.container-auth {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  font-size: 20px;
+}
+
+div.container-auth a.btn.btn-danger {
+  margin-left: 10px;
 }
 
 div.container-page-create-postcard {

@@ -16,3 +16,8 @@ Route::get('/postcard/create', 'PostcardController@createPostcard')->name('postc
 
 // Store postcard
 Route::post('/postcard/store', 'PostcardController@storePostcard')->name('postcard.store');
+
+// Route Auth
+Route::post('/login', 'Auth\LoginController@login')->name('login');
+Route::post('/register', 'Auth\RegisterController@register')->name('register');
+Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
