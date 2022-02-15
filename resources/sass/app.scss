@@ -25,8 +25,37 @@ body {
 div.container-postcards {
     width: 100%;
 
+    table {
+        width: auto;
+        margin: 0 auto;
+    }
+    
+    th {
+        text-align: center;
+
+        &:first-child {
+            width: 15%;
+        }
+
+        &:nth-child(2) {
+            width: 25%;
+        }
+
+        &:nth-child(3) {
+            width: 40%;
+        }
+
+        &:nth-child(4) {
+            width: 20%;
+        }
+    }
+
     th, td {
         padding: 10px;
+    }
+
+    td:nth-child(4) {
+        text-align: center;
     }
 }
 

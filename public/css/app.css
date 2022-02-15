@@ -10979,9 +10979,38 @@ div.container-postcards {
   width: 100%;
 }
 
+div.container-postcards table {
+  width: auto;
+  margin: 0 auto;
+}
+
+div.container-postcards th {
+  text-align: center;
+}
+
+div.container-postcards th:first-child {
+  width: 15%;
+}
+
+div.container-postcards th:nth-child(2) {
+  width: 25%;
+}
+
+div.container-postcards th:nth-child(3) {
+  width: 40%;
+}
+
+div.container-postcards th:nth-child(4) {
+  width: 20%;
+}
+
 div.container-postcards th,
 div.container-postcards td {
   padding: 10px;
+}
+
+div.container-postcards td:nth-child(4) {
+  text-align: center;
 }
 
 header,

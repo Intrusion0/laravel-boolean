@@ -2,16 +2,21 @@
     <div class="container-postcards">
         <table border="1">
             <tr>
-                <th>a</th>
-                <th>b</th>
-                <th>c</th>
-                <th>d</th>
+                <th>Sender</th>
+                <th>Address</th>
+                <th>Text</th>
+                <th>Image</th>
             </tr>
-            <tr>
-                <td>a</td>
-                <td>a</td>
-                <td>a</td>
-                <td>a</td>
+            <tr v-for="postcard in postcards" :key="postcard.id">
+                <td>{{ postcard.sender }}</td>
+                <td>{{ postcard.address }}</td>
+                <td>{{ postcard.text }}</td>
+                <td v-if="postcard.image">{{ postcard.image }}</td>
+                <td v-else>
+                    <span>
+                        no-image
+                    </span>
+                </td>
             </tr>
         </table>
     </div>
@@ -19,8 +24,18 @@
 
 <script>
     export default {
+        data() {
+            return {
+                postcards: []
+            }
+        },
         mounted() {
-            console.log('Componente')
+            
+            axios.get('/api/postcards/list')
+                 .then(r => {
+                     this.postcards = r.data;
+                 })
+                 .catch(e => console.error(e))
         }
     }
 </script>
