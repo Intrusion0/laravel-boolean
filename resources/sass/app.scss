@@ -1,0 +1,38 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// General rules
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: purple;
+    width: 70%;
+    margin: 0 auto;
+    color: #fff;
+}
+
+// Componente Postcards
+div.container-postcards {
+    width: 100%;
+
+    th, td {
+        padding: 10px;
+    }
+}
+
+// Header - Footer
+header, footer {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px 0;
+}
