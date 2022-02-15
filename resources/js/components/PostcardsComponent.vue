@@ -10,13 +10,17 @@
             <tr v-for="postcard in postcards" :key="postcard.id">
                 <td>{{ postcard.sender }}</td>
                 <td>{{ postcard.address }}</td>
-                <td>{{ postcard.text }}</td>
+                <td>
+                    <div>
+                        {{ postcard.text }} 
+                    </div>
+                </td>
                 <td v-if="postcard.image">
                     <img :src="'/storage/postcards/' + postcard.image" :alt="postcard.sender">
                 </td>
                 <td v-else>
                     <span>
-                        no-image
+                        <img src="/storage/postcards/image-default.png" alt="default image">
                     </span>
                 </td>
             </tr>

@@ -54,7 +54,14 @@ div.container-postcards {
         padding: 10px;
 
         img {
-            max-width: 70%;
+            max-width: 40%;
+        }
+
+        div {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
         }
     }
 

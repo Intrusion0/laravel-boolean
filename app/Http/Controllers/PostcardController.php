@@ -15,7 +15,7 @@ class PostcardController extends Controller
     // Api get all postcards
     public function getPostcards() {
 
-        $postcards = Postcard::all();
+        $postcards = Postcard::OrderByDesc('id')->get();
 
         return json_encode($postcards);
     }

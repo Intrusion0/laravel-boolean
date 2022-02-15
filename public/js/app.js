@@ -1934,6 +1934,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -37552,7 +37556,15 @@ var render = function () {
             _vm._v(" "),
             _c("td", [_vm._v(_vm._s(postcard.address))]),
             _vm._v(" "),
-            _c("td", [_vm._v(_vm._s(postcard.text))]),
+            _c("td", [
+              _c("div", [
+                _vm._v(
+                  "\n                    " +
+                    _vm._s(postcard.text) +
+                    " \n                "
+                ),
+              ]),
+            ]),
             _vm._v(" "),
             postcard.image
               ? _c("td", [
@@ -37563,11 +37575,7 @@ var render = function () {
                     },
                   }),
                 ])
-              : _c("td", [
-                  _c("span", [
-                    _vm._v("\n                    no-image\n                "),
-                  ]),
-                ]),
+              : _c("td", [_vm._m(1, true)]),
           ])
         }),
       ],
@@ -37588,6 +37596,19 @@ var staticRenderFns = [
       _c("th", [_vm._v("Text")]),
       _vm._v(" "),
       _c("th", [_vm._v("Image")]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("span", [
+      _c("img", {
+        attrs: {
+          src: "/storage/postcards/image-default.png",
+          alt: "default image",
+        },
+      }),
     ])
   },
 ]

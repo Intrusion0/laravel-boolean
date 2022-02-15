@@ -11011,7 +11011,15 @@ div.container-postcards td {
 
 div.container-postcards th img,
 div.container-postcards td img {
-  max-width: 70%;
+  max-width: 40%;
+}
+
+div.container-postcards th div,
+div.container-postcards td div {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 div.container-postcards td:nth-child(4) {
